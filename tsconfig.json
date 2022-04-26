@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "declaration": false,
+    "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "target": "es2017",
     "sourceMap": true,
-    "outDir": "./",
-    "baseUrl": "./src",
+    "outDir": "dist",
+    "baseUrl": "src",
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": false,
@@ -17,8 +17,8 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "paths": { "@/*": ["*"] }
+    "esModuleInterop": true
   },
-  "include": ["src/**/*", "index.ts"],
+  "include": ["src/**/*", "src/index.ts"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
